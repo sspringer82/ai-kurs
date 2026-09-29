@@ -1,0 +1,22 @@
+# Eigene Modellvariante auf Basis eines vorhandenen Modells
+# Erzeugen:  ollama create workshop-assistent -f Modelfile
+# Starten:   ollama run workshop-assistent
+# Entfernen: ollama rm workshop-assistent
+
+# Basismodell – hier legen Sie auch die Quantisierungsstufe fest,
+# z. B. FROM llama3.1:8b-instruct-q8_0 statt der Standardvariante (Q4_K_M)
+FROM llama3.2
+
+# Größeres Kontextfenster (kostet mehr RAM/VRAM) und deterministischere Antworten
+PARAMETER num_ctx 16384
+PARAMETER temperature 0.2
+
+# Fester System Prompt
+SYSTEM """
+Du bist ein Assistent für Servicetechniker von Verpackungsmaschinen.
+Antworte auf Deutsch, knapp und in nummerierten Schritten.
+"""
+
+# Ein per LoRA trainierter Adapter wird zur Laufzeit zum Basismodell geladen.
+# Der Adapter muss zum Basismodell passen (Safetensors- oder GGUF-Format).
+# ADAPTER ./lora-adapter

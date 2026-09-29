@@ -1,0 +1,22 @@
+{
+  "name": "04-mcp",
+  "version": "1.0.0",
+  "private": true,
+  "type": "module",
+  "description": "Model Context Protocol: MCP-Server mit Tools, Resources und Prompts, Clients für STDIO und Streamable HTTP, Integration in LangChain",
+  "scripts": {
+    "server:http": "node server/http.js",
+    "inspector": "npx @modelcontextprotocol/inspector node server/stdio.js"
+  },
+  "dependencies": {
+    "@langchain/core": "^1.2.4",
+    "@langchain/mcp-adapters": "^1.1.3",
+    "@langchain/ollama": "^1.3.0",
+    "@modelcontextprotocol/client": "^2.0.0",
+    "@modelcontextprotocol/node": "^2.0.0",
+    "@modelcontextprotocol/server": "^2.0.0",
+    "express": "^5.2.1",
+    "langchain": "^1.5.4",
+    "zod": "^4.4.3"
+  }
+}

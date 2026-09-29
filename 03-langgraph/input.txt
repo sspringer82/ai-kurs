@@ -1,0 +1,7 @@
+Lokale Sprachmodelle im Unternehmen
+
+Viele Unternehmen möchten die Möglichkeiten großer Sprachmodelle nutzen, ohne vertrauliche Daten an externe Anbieter zu übertragen. Lokale Open-Source-Modelle wie Llama, Gemma, Qwen oder Mistral lassen sich mit Plattformen wie Ollama auf eigener Hardware betreiben. Die Daten verlassen dabei das eigene Netzwerk nicht.
+
+Der Preis dafür ist Verantwortung für Betrieb und Hardware. Grafikkarten mit ausreichend Speicher sind teuer, und kleinere Modelle erreichen nicht die Qualität der größten kommerziellen Modelle. Mit Quantisierung lässt sich der Speicherbedarf deutlich senken, allerdings auf Kosten der Genauigkeit.
+
+Für viele Anwendungsfälle reichen kleine Modelle jedoch völlig aus, vor allem wenn sie mit Retrieval Augmented Generation um das Wissen des Unternehmens erweitert werden. Das Modell muss dann nicht alles wissen, sondern nur gut mit den gelieferten Informationen umgehen können.

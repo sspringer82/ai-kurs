@@ -1,0 +1,18 @@
+{
+  "name": "01-ollama",
+  "version": "1.0.0",
+  "private": true,
+  "type": "module",
+  "description": "Kommunikation mit Ollama: HTTP-API, Streaming, ollama.js und OpenAI-kompatible Schnittstelle",
+  "scripts": {
+    "http": "node http-api.js",
+    "stream": "node http-api-stream.js",
+    "lib": "node ollama.js",
+    "context": "node context.js",
+    "info": "node model-info.js",
+    "openai": "node openai-compatible.js"
+  },
+  "dependencies": {
+    "ollama": "^0.6.3"
+  }
+}

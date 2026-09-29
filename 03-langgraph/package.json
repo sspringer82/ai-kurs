@@ -1,0 +1,14 @@
+{
+  "name": "03-langgraph",
+  "version": "1.0.0",
+  "private": true,
+  "type": "module",
+  "description": "LangGraph: State, Nodes, Edges, Verzweigungen, Schleifen, Parallelisierung, Tool-Knoten und Human in the Loop",
+  "dependencies": {
+    "@langchain/core": "^1.2.4",
+    "@langchain/langgraph": "^1.4.8",
+    "@langchain/ollama": "^1.3.0",
+    "langchain": "^1.5.4",
+    "zod": "^4.4.3"
+  }
+}

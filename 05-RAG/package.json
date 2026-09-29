@@ -1,0 +1,23 @@
+{
+  "name": "05-rag",
+  "version": "1.0.0",
+  "private": true,
+  "type": "module",
+  "description": "Retrieval Augmented Generation: Einlesen, Chunking, Embeddings, Qdrant, Retrieval, Generation mit Quellenangaben und Evaluierung",
+  "scripts": {
+    "db": "docker compose up -d",
+    "index": "node 05-indexing/index.js",
+    "retrieve": "node 06-retrieval/retrieve.js",
+    "rag": "node 07-generation/02-rag.js",
+    "evaluate": "node 08-evaluation/evaluate.js"
+  },
+  "dependencies": {
+    "@langchain/core": "^1.2.4",
+    "@langchain/ollama": "^1.3.0",
+    "@langchain/qdrant": "^1.0.3",
+    "@langchain/textsplitters": "^1.0.1",
+    "cheerio": "^1.1.2",
+    "langchain": "^1.5.4",
+    "pdf-parse": "^2.4.5"
+  }
+}
