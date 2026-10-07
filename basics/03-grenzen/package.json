@@ -1,0 +1,13 @@
+{
+  "name": "03-grenzen",
+  "version": "1.0.0",
+  "private": true,
+  "type": "module",
+  "description": "Grenzen von Sprachmodellen: Halluzination, Buchstaben zählen, Rechnen, Wissensstand, Prompt Injection",
+  "scripts": {
+    "start": "node grenzen.js"
+  },
+  "dependencies": {
+    "ollama": "^0.6.3"
+  }
+}

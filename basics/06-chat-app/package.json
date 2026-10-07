@@ -1,0 +1,14 @@
+{
+  "name": "03-chat-app",
+  "version": "1.0.0",
+  "private": true,
+  "type": "module",
+  "description": "Chatbot als Client-/Server-Anwendung: Express-Backend, Streaming in den Browser",
+  "scripts": {
+    "start": "node index.js"
+  },
+  "dependencies": {
+    "express": "^5.0.1",
+    "ollama": "^0.6.3"
+  }
+}

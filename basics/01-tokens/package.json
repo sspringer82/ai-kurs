@@ -1,0 +1,16 @@
+{
+  "name": "01-tokens",
+  "version": "1.0.0",
+  "private": true,
+  "type": "module",
+  "description": "Tokens: Zerlegung, Wahrscheinlichkeiten des nächsten Tokens und Grenzen des Kontextfensters",
+  "scripts": {
+    "start": "node tokens.js",
+    "logprobs": "node logprobs.js",
+    "kontext": "node kontextfenster.js"
+  },
+  "dependencies": {
+    "js-tiktoken": "^1.0.20",
+    "ollama": "^0.6.3"
+  }
+}

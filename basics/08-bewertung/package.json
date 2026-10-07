@@ -1,0 +1,16 @@
+{
+  "name": "08-bewertung",
+  "version": "1.0.0",
+  "private": true,
+  "type": "module",
+  "description": "Modelle bewerten und auswählen: Testdatensatz, Genauigkeit, Latenz, Tokens, Prompt-Varianten und Kosten",
+  "scripts": {
+    "start": "node evaluate.js",
+    "uebung": "node evaluate.js llama3.2:1b --prompt uebung --fehler",
+    "kosten": "node kosten.js"
+  },
+  "dependencies": {
+    "ollama": "^0.6.3",
+    "openai": "^6.0.0"
+  }
+}

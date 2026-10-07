@@ -1,0 +1,14 @@
+{
+  "name": "02-modelle",
+  "version": "1.0.0",
+  "private": true,
+  "type": "module",
+  "description": "Modelle vergleichen: gleiche Aufgaben an verschiedene Modelle, Reasoning mit Thinking",
+  "scripts": {
+    "vergleich": "node vergleich.js",
+    "thinking": "node thinking.js"
+  },
+  "dependencies": {
+    "ollama": "^0.6.3"
+  }
+}

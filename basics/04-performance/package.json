@@ -1,0 +1,14 @@
+{
+  "name": "04-performance",
+  "version": "1.0.0",
+  "private": true,
+  "type": "module",
+  "description": "Performance lokaler Modelle: Ladezeit, Prompt-Verarbeitung, Generierung, Speicher und GPU-Anteil",
+  "scripts": {
+    "start": "node performance.js",
+    "quant": "node performance.js llama3.2:3b-instruct-q4_K_M llama3.2:3b-instruct-q8_0 llama3.2:3b-instruct-fp16"
+  },
+  "dependencies": {
+    "ollama": "^0.6.3"
+  }
+}

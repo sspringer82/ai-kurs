@@ -1,0 +1,13 @@
+{
+  "name": "05-cloud-api",
+  "version": "1.0.0",
+  "private": true,
+  "type": "module",
+  "description": "Kommerzielle Anbieter: Die OpenAI-API mit dem offiziellen SDK",
+  "scripts": {
+    "start": "node cloud.js"
+  },
+  "dependencies": {
+    "openai": "^6.0.0"
+  }
+}

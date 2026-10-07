@@ -1,0 +1,28 @@
+<!doctype html>
+<html lang="de">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Chat</title>
+    <style>
+      body { font-family: system-ui, sans-serif; max-width: 760px; margin: 2rem auto; padding: 0 1rem; }
+      #messages { display: flex; flex-direction: column; gap: 0.75rem; margin-bottom: 1rem; }
+      .message { white-space: pre-wrap; padding: 0.6rem 0.9rem; border-radius: 10px; }
+      .user { align-self: flex-end; background: #e0e7ff; }
+      .assistant { align-self: flex-start; background: #f1f5f9; }
+      form { display: flex; gap: 0.5rem; align-items: center; }
+      textarea { flex: 1; min-height: 3rem; font: inherit; }
+    </style>
+    <script src="index.js" defer></script>
+  </head>
+
+  <body>
+    <h1>Chat</h1>
+    <div id="messages"></div>
+    <form id="form">
+      <textarea id="message" placeholder="Nachricht …" required></textarea>
+      <label><input type="checkbox" id="stream" checked /> Streaming</label>
+      <button>Senden</button>
+    </form>
+  </body>
+</html>
