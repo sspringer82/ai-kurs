@@ -1,4 +1,4 @@
-# Beispiele – Tag 1
+# Beispiele
 
 Alle Beispiele sind ES-Module für Node.js (≥ 22) und laufen – bis auf `07-cloud-api` – gegen lokale Modelle in Ollama.
 Die Nummerierung folgt der Reihenfolge der Kapitel.
